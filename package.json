@@ -1,0 +1,9 @@
+{
+  "name": "bandlab-take-home",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "http-server --proxy http://localhost:8080?"
+  }
+}
