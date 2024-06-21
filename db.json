@@ -3,31 +3,31 @@
     {
       "uid": "cee6210a-33c4-4ebc-8d8a-78134096258e",
       "display_name": "NimbleHawk8829",
-      "avatar": "avatar_placeholder_1.png",
+      "avatar": "apple.png",
       "date_joined": 1613664000
     },
     {
       "uid": "917f89b5-0969-46f5-af0a-14a4cf93e8ac",
       "display_name": "MysteriousShadow6345",
-      "avatar": "avatar_placeholder_2.png",
+      "avatar": "calculator.png",
       "date_joined": 1658764800
     },
     {
       "uid": "0b41efc6-7a88-4a02-9f52-43deb8ec80ee",
       "display_name": "QuickRaven1323",
-      "avatar": "avatar_placeholder_3.png",
+      "avatar": "pencil.png",
       "date_joined": 1623168000
     },
     {
       "uid": "06efa309-21e7-4798-8b40-e796df7febf7",
       "display_name": "NimbleTiger205",
-      "avatar": "avatar_placeholder_4.png",
+      "avatar": "art-palette.png",
       "date_joined": 1669910400
     },
     {
       "uid": "11775c4d-e1ed-441f-9720-4ad312f0a060",
       "display_name": "WildWizard1221",
-      "avatar": "avatar_placeholder_5.png",
+      "avatar": "flask-analysis.png",
       "date_joined": 1652025600
     }
   ],
@@ -237,13 +237,13 @@
     {
       "uid": "c45b1ead-fc97-4de5-8163-d6e2298694e4",
       "name": "New Wave Kit",
-      "image": "image_placeholder_1.png",
+      "image": "basketball.png",
       "src": "new-wave-kit.ogg"
     },
     {
       "uid": "e3468508-2a84-49f0-8d63-f412dd99b580",
       "name": "Synth Organ",
-      "image": "image_placeholder_2.png",
+      "image": "prize-cup.png",
       "src": "synth-organ.ogg"
     }
   ]

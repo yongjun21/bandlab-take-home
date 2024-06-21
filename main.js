@@ -34,6 +34,7 @@ import { createRouter, createWebHistory } from 'vue-router';
   app.component('nav-bar', await vueImport('./components/common/NavBar.vue'));
   app.component('loading-state', await vueImport('./components/common/LoadingState.vue'));
   app.component('post-card', await vueImport('./components/PostView/PostCard.vue'));
+  app.component('sample-card', await vueImport('./components/SampleView/SampleCard.vue'));
 
   app.mount('#app');
 })();
