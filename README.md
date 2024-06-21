@@ -1,6 +1,8 @@
 # Bandlab Take Home Assignment
 
-This app is implmented as a single page app (SPA) using the VueJS framework. No build step is required as we compiled the Vue Single-File-Components at runtime using [vue-import](https://github.com/kianfang/vue-import) and load the separate files as ES modules.
+https://bandlab-yongjun.netlify.app/
+
+This app is implmented as a single page app (SPA) using the VueJS framework. No build step is required as we compiled the Vue Single-File-Components at runtime using [vue-import](https://github.com/kianfang/vue-import) and load the separate files as ES modules. Works on modern browsers like Firefox and Chrome.
 
 It includes the following features:
 - Navigate between `Posts` page and `Samples` page via nav bar
