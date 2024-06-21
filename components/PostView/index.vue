@@ -5,14 +5,17 @@
     <div v-else class="post-container">
       <div class="post-controls">
         <label class="group">
-          <input type="checkbox" v-model="groupedByUser" />
-          Group by User
+          Group [ ]
+          <select v-model="groupedByUser">
+            <option :value="false">&#x274C;</option>
+            <option :value="true">By user</option>
+          </select>
         </label>
         <label class="sort">
-          Sort
+          Sort &#x2B0D;
           <select v-model="sortAlphabetically">
-            <option :value="false">Chronologically</option>
-            <option :value="true">Alphabetically</option>
+            <option :value="false">Date &#x2193;</option>
+            <option :value="true">ABC &#x2191;</option>
           </select>
         </label>
       </div>
@@ -22,7 +25,14 @@
           :key="composed_by.uid"
           class="group-container"
         >
-          <h2 class="group-meta">{{ composed_by.display_name }}</h2>
+          <h2 class="group-meta">
+            <img
+              class="avatar"
+              :src="getImageSrc(composed_by.avatar)"
+              :alt="composed_by.display_name"
+            />
+            {{ composed_by.display_name }}
+          </h2>
           <post-card
             v-for="post in group"
             :key="post.uid"
@@ -46,6 +56,7 @@
 <script>
 import { computed } from 'vue';
 import usePostData from './usePostData.js';
+import { getImageSrc } from '../../helpers';
 
 export default {
   name: 'PostView',
@@ -70,7 +81,8 @@ export default {
       loading,
       grouped,
       sortAlphabetically,
-      groupedByUser
+      groupedByUser,
+      getImageSrc
     };
   }
 };
@@ -78,12 +90,48 @@ export default {
 
 <style>
 .post-view {
+  .post-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 24px 0;
+
+    label {
+      font-size: 120%;
+    }
+  }
+
   .group-list {
-    padding-left: 32px;
-    
-    .group-meta {
-      margin-left: -32px;
-    };
+    padding-left: 16px;
+  }
+
+  .group-container {
+    position: relative;
+    margin: 32px 0 64px;
+  }
+
+  .group-meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 32px;
+    margin-top: -32px;
+    margin-left: -16px;
+
+    .avatar {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+  }
+
+  .loading-state {
+    margin: 80px 0;
   }
 }
 </style>
