@@ -4,8 +4,7 @@
 
 <style>
 #app {
-  h1 {
-    color: red;
-  }
+  max-width: 480px;
+  margin: 0 auto;
 }
 </style>

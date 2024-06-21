@@ -6,6 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router';
   const App = await vueImport('./App.vue');
 
   const app = createApp(App);
+
   const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -29,5 +30,10 @@ import { createRouter, createWebHistory } from 'vue-router';
     ]
   });
   app.use(router);
+
+  app.component('nav-bar', await vueImport('./components/common/NavBar.vue'));
+  app.component('loading-state', await vueImport('./components/common/LoadingState.vue'));
+  app.component('post-card', await vueImport('./components/PostView/PostCard.vue'));
+
   app.mount('#app');
 })();
